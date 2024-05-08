@@ -1,0 +1,15 @@
+﻿ 
+    .navbar a,
+    .navbar a:focus {
+        align-items: center;
+         color: #6e4747;
+        transition: 0.3s;
+    }
+
+
+        .navbar a:hover,
+        .navbar .active,
+        .navbar .active:focus,
+        .navbar li:hover > a {
+            color: #ba5757;
+        }
