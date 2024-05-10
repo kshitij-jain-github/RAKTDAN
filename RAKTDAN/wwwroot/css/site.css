@@ -13,15 +13,18 @@ html {
     min-height: 100%;
 }
 
- 
-/*--------------------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+     color: indianred;
+}
+/*------------------------------------------------------
   # Hero Section
-  --------------------------------------------------------------*/
+  -----------------------------------bg-transpar4--------------------------*/
 #hero {
     width: 100%;
     position: relative;
     overflow: hidden;
- }
+    min-height:70vh
+  }
 
     #hero::before {
         content: "";
@@ -31,7 +34,7 @@ html {
         width: 250%;
         height: 200%;
         z-index: -1;
-        background-color: #ffe7e7;
+        background-color: #f5ceceff;
         transform: skewY(-45deg);
     }
 
@@ -40,31 +43,39 @@ html {
         font-size: 48px;
         font-weight: 500;
         line-height: 56px;
-        color: #ba5757;
+        color: indianred;
         font-family: "Poppins", sans-serif;
     }
 
     #hero h2 {
-        color: #7d5151;
+        margin: 50px 0 30px;
+        color: indianred;
         font-size: 20px;
     }
-
+.btns{
+    margin:0 -4px;
+}
 .search-btn {
-    background: #c16666;
+    background: white;
+    border:3px solid indianred;
     display: inline-block;
     padding: 5px 30px;
-    margin: 2px 5px;
+    margin: 2px 2px;
     border-radius: 50px;
-    color: #fff6f6;
+    color: indianred;
     transition: none;
     font-size: 18px;
     font-weight: 600;
-     transition: 0.3s;
+    transition: 0.3s;
     text-decoration: none;
 }
 
 #hero .hero-img {
     width: 500px;
+}
+
+.note{
+    font-size:12px
 }
 
 @media (max-width: 991px) {
@@ -110,7 +121,6 @@ html {
   # Sections General
   --------------------------------------------------------------*/
 section {
-    padding: 5%;
     overflow: hidden;
 }
 
@@ -125,13 +135,297 @@ section {
 
     .section-title h2 {
         font-size: 32px;
-        font-weight: 400;
-        margin-bottom: 20px;
+        font-weight: 600;
+        margin: 50px 0 30px;
         padding-bottom: 0;
-        color: #ba5757;
+        color: indianred;
         font-family: "Poppins", sans-serif;
     }
 
-    .section-title p {
-        margin-bottom: 0;
+
+
+/*FAQs Section */
+
+
+
+.faq-heading {
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq {
+    background-color: transparent;
+    border: 2px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+    .faq.active {
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
     }
+
+
+
+.faq-title {
+    margin: 0 35px 0 0;
+    font-size:22px
+}
+
+.faq-text {
+    display: none;
+    margin: 30px 0 0;
+}
+
+.faq.active .faq-text {
+    display: block;
+ }
+
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+    .faq-toggle:focus {
+        outline: 0;
+    }
+
+    .faq-toggle .fa-times {
+        display: none;
+    }
+
+.faq.active .faq-toggle .fa-times {
+    color: #fff;
+    display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+}
+
+.faq.active .faq-toggle {
+    background-color: black;
+}
+
+
+
+/*BLOOD ANIMATION*/
+
+ 
+
+.header {
+    padding: 2%;
+    background-color: indianred;
+    text-align:center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(28, 28, 28);
+}
+
+i {
+    color: white;
+}
+
+ 
+
+#taartdiagram {
+    width: 400px;
+    height: 400px;
+    margin: 40px auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.gemeenschappelijk {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+
+#basisschijf {
+    background-color: rgb(148, 0, 0);
+}
+
+#middenschijf {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    left: 75px;
+    top: 75px;
+}
+
+.circle-heading {
+    font-family: 'Cantarell';
+    font-weight: bold;
+    color: rgb(28, 28, 28);
+    position: absolute;
+    text-align: center;
+    top: 105px;
+    line-height: 1.5em;
+}
+
+/*--------------------------------*/
+
+.punt {
+    clip: rect(0px, 200px, 400px, 0);
+}
+
+/* PUNT 1 */
+
+.punt_1_container {
+    transform: rotate(148deg);
+}
+
+.punt_1 {
+    background-color: rgb(250, 30, 30);
+    transform: rotate(32deg);
+}
+
+/* PUNT 2 */
+
+.punt_2_container {
+    transform: rotate(251deg);
+}
+
+.punt_2 {
+    background-color: rgb(195, 1, 1);
+    transform: rotate(76deg);
+}
+
+/* PUNT 3 */
+
+.punt_3_container {
+    transform: rotate(360deg);
+}
+
+.punt_3 {
+    background-color: rgb(86, 13, 13);
+    transform: rotate(97deg);
+}
+
+/*-------------------------*/
+
+p.label {
+    color: rgb(28, 28, 28);
+    text-align: right;
+    position: absolute;
+    border-bottom: 1px solid rgb(28, 28, 28);
+    padding: 0px 0px 0px 60px;
+    width: 70px;
+    left: 350px;
+}
+
+.punt_1_label {
+    top: 180px;
+ }
+
+p.punt_2_label {
+    top: 310px;
+    left: -10px;
+    text-align: left;
+    padding: 0px 120px 0px 0px;
+}
+
+p.punt_3_label {
+    top: 50px;
+    left: -35px;
+    text-align: left;
+    padding: 0px 100px 0px 0px;
+}
+
+p.punt_4_label {
+    top: 200px;
+    left: -80px;
+    text-align: left;
+    padding: 0px 100px 0px 0px;
+}
+
+ 
+/*-------------------------*/
+
+@media (max-width: 800px) {
+
+    
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #taartdiagram {
+        width: 200px;
+        height: 200px;
+    }
+
+    #middenschijf {
+        width: 125px;
+        height: 125px;
+        left: 37px;
+        top: 37px;
+    }
+
+    h5 {
+        top: 55px;
+        line-height: 1.5em;
+        font-size: 0.7em;
+    }
+
+    .punt {
+        clip: rect(0px, 100px, 200px, 0);
+    }
+
+    p.label {
+        padding: 0px 0px 0px 30px;
+        width: 50px;
+        left: 180px;
+        font-size: 0.8em;
+    }
+
+    .punt_1_label {
+        top: 90px;
+    }
+
+    p.punt_2_label {
+        top: 150px;
+        left: -40px;
+        padding: 0px 30px 0px 0px;
+    }
+
+    p.punt_3_label {
+        top: 10px;
+        left: -25px;
+        padding: 0px 30px 0px 0px;
+    }
+
+    p.punt_4_label {
+        top: 90px;
+        left: -60px;
+        padding: 0px 30px 0px 0px;
+    }
+}

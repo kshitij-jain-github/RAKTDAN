@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using RAKTDAN.Model;
 
 namespace RAKTDAN.Data
 {
@@ -9,5 +10,6 @@ namespace RAKTDAN.Data
         {
             
         }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
     }
 }

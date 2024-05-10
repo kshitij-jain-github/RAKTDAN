@@ -1,15 +1,162 @@
-﻿ 
-    .navbar a,
-    .navbar a:focus {
-        align-items: center;
-         color: #6e4747;
-        transition: 0.3s;
+﻿
+.navbar a,
+.navbar a:focus {
+    align-items: center;
+    color: #6e4747;
+    transition: 0.3s;
+    font-weight: 600;
+    margin:0 10px
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 800
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+    color: #ba5757;
+}
+
+.navbar img {
+    width: 50px
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+#footer {
+    background: #fff;
+    padding: 0 0 30px 0;
+    color: #6e4747;
+    font-size: 14px;
+    background: #eff2f8;
+}
+
+
+
+
+
+    #footer .footer-top {
+        padding: 60px 0 30px 0;
+        background: #fff;
     }
 
-
-        .navbar a:hover,
-        .navbar .active,
-        .navbar .active:focus,
-        .navbar li:hover > a {
-            color: #ba5757;
+        #footer .footer-top .footer-contact {
+            margin-bottom: 30px;
         }
+
+            #footer .footer-top .footer-contact h4 {
+                font-size: 22px;
+                margin: 0 0 30px 0;
+                padding: 2px 0 2px 0;
+                line-height: 1;
+                font-weight: 700;
+                color: #6e4747;
+            }
+
+            #footer .footer-top .footer-contact p {
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 0;
+                font-family: "Raleway", sans-serif;
+                color: #958a8a;
+            }
+
+        #footer .footer-top h4 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #6e4747;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        #footer .footer-top .footer-links {
+            margin-bottom: 30px;
+        }
+
+            #footer .footer-top .footer-links ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+                #footer .footer-top .footer-links ul i {
+                    padding-right: 2px;
+                    color: #d89f9f;
+                    font-size: 18px;
+                    line-height: 1;
+                }
+
+                #footer .footer-top .footer-links ul li {
+                    padding: 10px 0;
+                    display: flex;
+                    align-items: center;
+                }
+
+                    #footer .footer-top .footer-links ul li:first-child {
+                        padding-top: 0;
+                    }
+
+                #footer .footer-top .footer-links ul a {
+                    color: #958a8a;
+                    transition: 0.3s;
+                    display: inline-block;
+                    line-height: 1;
+                    text-decoration:none;
+                }
+
+                    #footer .footer-top .footer-links ul a:hover {
+                        text-decoration: none;
+                        color: #ba5757;
+                    }
+
+        #footer .footer-top .social-links a {
+            font-size: 18px;
+            display: inline-block;
+            background: #ba5757;
+            color: #fff;
+            line-height: 1;
+            padding: 8px 0;
+            margin-right: 4px;
+            border-radius: 50%;
+            text-align: center;
+            width: 36px;
+            height: 36px;
+            transition: 0.3s;
+        }
+
+            #footer .footer-top .social-links a:hover {
+                background: #2c2727;
+                color: #fff;
+                text-decoration: none;
+            }
+
+    #footer .copyright {
+        text-align: center;
+        float: left;
+        color: #6e4747;
+    }
+
+    #footer .credits {
+        float: right;
+        text-align: center;
+        font-size: 13px;
+        color: #6e4747;
+    }
+
+@media (max-width: 768px) {
+
+    #footer .copyright,
+    #footer .credits {
+        float: none;
+        text-align: center;
+        padding: 5px 0;
+    }
+}

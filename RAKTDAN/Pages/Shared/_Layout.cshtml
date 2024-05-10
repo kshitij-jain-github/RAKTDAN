@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="~/RAKTDAN.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/nav_footer.css" asp-append-version="true" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 <body> 
     <header id="header">        
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm box-shadow bg-transparent mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">RAKTDAN</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">RAKTDAN</a><img src="/img/blood-156063_1280.png" alt="" class="img-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,13 +24,13 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex  justify-content-between">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" asp-area="" asp-page="/Index">Home</a>m
+                            <a class="nav-link active" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " asp-area="" asp-page="/Privacy">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " asp-area="" asp-page="/Index">FAQs</a>
+                            <a class="nav-link " asp-area="" asp-page="/FAQs">FAQs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " asp-area="" asp-page="/Privacy">Find Donar</a>
@@ -43,16 +45,86 @@
             </div>
         </nav>
     </header>
-    <div class="container-fluid">
-        <main role="main" class="pb-3">
+    <div class="container-fluid p-0" >
+        <main role="main" >
             @RenderBody()
         </main>
     </div>
-    
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Raktdan<img src="/img/blood-156063_1280.png" alt="" width="50" class="img-fluid"></h3>
+                        <p>
+                            
+                           
+                            <strong>Phone:</strong> +22 5589 55488 55<br>
+                            <strong>Email:</strong> info.raktdan@gmail.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                             <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Find Donar</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Donate Blood</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Social Networks</h4>
+                        <p>Follow us on:</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="fa-brands fa-google"></i></a>
+                            <a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-2 ">
+            <div class="copyright ">
+                &copy; Copyright <strong><span>RAKTDAN</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits ">
+                
+                Designed by <a href="">Kshitij Jain</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://kit.fontawesome.com/b5e70f813f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
